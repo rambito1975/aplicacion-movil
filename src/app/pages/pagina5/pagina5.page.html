@@ -1,35 +1,41 @@
 <ion-header>
-  <ion-toolbar color="dark" >
+  <ion-toolbar color="warning">
     <ion-title>
-      RamboAp
+      DuocPresent
     </ion-title>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/pagina1"></ion-back-button>
     </ion-buttons>
-    <ion-icon slot="end" name="person" size="large" class="ion-padding"></ion-icon>
+    <ion-icon slot="end" name="school" size="large" class="ion-padding"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
   <ion-text color="primary">
 
-<ion-accordion-group [multiple]="true" [value]="['first', 'third']">
-  <ion-accordion value="first">
-    <ion-item slot="header" color="light">
-      <ion-label>APLICACION MOVIL</ion-label>
-    </ion-item>
-    <div class="ion-padding" slot="content">Clases 100%</div>
-  </ion-accordion>
-  <ion-accordion value="second">
-    <ion-item slot="header" color="light">
-      <ion-label>APLICACION MOVIL</ion-label>
-    </ion-item>
-    <div class="ion-padding" slot="content">Clases 90%</div>
-  </ion-accordion>
-  <ion-accordion value="third">
-    <ion-item slot="header" color="light">
-      <ion-label>APLICACION MOVIL</ion-label>
-    </ion-item>
-    <div class="ion-padding" slot="content">Clases 100%</div>
-  </ion-accordion>
-</ion-accordion-group>
+    <ion-accordion-group [multiple]="true" [value]="['first', 'third']">
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light">
+          <ion-label>APLICACION MOVIL</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Clases 100%</div>
+      </ion-accordion>
+      <ion-accordion value="second">
+        <ion-item slot="header" color="light">
+          <ion-label>ARQUITECTURA</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Clases 90%</div>
+      </ion-accordion>
+      <ion-accordion value="third">
+        <ion-item slot="header" color="light">
+          <ion-label>PROGRAMACION DE BASE DE DATOS</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Clases 100%</div>
+      </ion-accordion>
+    </ion-accordion-group>
+
+<ion-footer [translucent]="true" idow>
+  <ion-toolbar>
+    <ion-title>DuocPresent</ion-title>
+  </ion-toolbar>
+</ion-footer>
