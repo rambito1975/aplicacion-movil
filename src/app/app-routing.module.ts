@@ -2,13 +2,10 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
-  },
+
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'auth',
     pathMatch: 'full'
   },
   {
@@ -34,7 +31,8 @@ const routes: Routes = [
   {
     path: 'inicio',
     loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
-  },  {
+  },
+  {
     path: 'pagina3',
     loadChildren: () => import('./pages/pagina3/pagina3.module').then( m => m.Pagina3PageModule)
   },
@@ -45,6 +43,10 @@ const routes: Routes = [
   {
     path: 'pagina5',
     loadChildren: () => import('./pages/pagina5/pagina5.module').then( m => m.Pagina5PageModule)
+  },
+  {
+    path: 'auth',
+    loadChildren: () => import('./pages/auth/auth.module').then( m => m.AuthPageModule)
   },
 
 
