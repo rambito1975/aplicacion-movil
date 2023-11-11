@@ -7,6 +7,8 @@
     <form [formGroup]="form" class="auth-form" (ngSubmit)="submit()" (keypress.enter)="submit()">
 
       <app-logo></app-logo>
+
+      
 <!--======= Email =========-->
         <app-custom-input 
         autocomplete="email" 
@@ -21,6 +23,7 @@
           <div *ngIf="form.controls.email.errors?.['email']" >Ingrese un correo valido</div>
         </div>
         
+
 <!--======= Password =========-->
         <app-custom-input
         [control]="form.controls.password" 
