@@ -1,5 +1,9 @@
 <ion-header class="ion-no-border">
   <ion-toolbar color="warning">
+
+<ion-buttons slot="start">  
+  <ion-back-button *ngIf="backButton" [defaultHref]="backButton"></ion-back-button>
+</ion-buttons>
     <ion-title>
       <strong>{{title}}</strong>
       <div class="admin"> D U O C   P R E S E N T</div>
